@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="484.121" Width="576.443">
     <Grid>
-        
+        <Button x:Name="startButton" Content="STOPPED" HorizontalAlignment="Left" Height="22" Margin="58,318,0,0" VerticalAlignment="Top" Width="58" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSED" HorizontalAlignment="Left" Height="22" Margin="186,318,0,0" VerticalAlignment="Top" Width="64" Click="OnDoorOpenButtonClicked"/>
+        <Button x:Name="LockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Height="22" Margin="308,318,0,0" VerticalAlignment="Top" Width="58" Click="OnLockedDoorButton"/>
+        <Button x:Name="AccuButton" Content="ON" HorizontalAlignment="Left" Height="22" Margin="438,318,0,0" VerticalAlignment="Top" Width="58" Click="OnAccuButtonClicked"/>
+        <Label x:Name="status" Content="Label" HorizontalAlignment="Left" Margin="58,396,0,0" VerticalAlignment="Top" Width="58"/>
+        <Label x:Name="DoorOpenState" Content="door is open" HorizontalAlignment="Left" Margin="174,396,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="LockDoorState" Content="door unlocked" HorizontalAlignment="Left" Margin="288,396,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label x:Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="438,396,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.143"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="303" Margin="10,0,0,0" VerticalAlignment="Top" Width="536" Source="Assets/navigation.jpg"/>
+
     </Grid>
 </Window>
